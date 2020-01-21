@@ -8,8 +8,8 @@ const CommentSection = (props) => {
   const [commentStat, setCommentStat] = useState(props.comments);
   return (
     <div>
-      {props.comments.map((item) => (
-        <Comment key={props.postId} comment={item} />
+      {props.comments.map((item, index) => (
+        <Comment key={props.postId.slice(0, index + 1)} comment={item} />
       ))}
 
       <CommentInput />

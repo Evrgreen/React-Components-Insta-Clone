@@ -8,7 +8,7 @@ const PostsPage = (props) => {
   return (
     <div className="posts-container-wrapper">
       {props.postData.map((post) => (
-        <Post post={post} />
+        <Post key={post.username} post={post} />
       ))}
     </div>
   );
