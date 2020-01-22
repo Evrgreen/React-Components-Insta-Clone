@@ -6,6 +6,9 @@ import "./Comment.css";
 
 const CommentSection = (props) => {
   const [commentStat, setCommentStat] = useState(props.comments);
+  console.log(commentStat);
+  console.log(props);
+  // const addComment = setCommentStat(commentStat.push());
   return (
     <div>
       {props.comments.map((item, index) => (
